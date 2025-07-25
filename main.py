@@ -1,6 +1,8 @@
+import sys
 from stats import wordcount
 from stats import letter_count
 from stats import sort_dict
+
 
 def get_book_text(filepath):
     with open(filepath) as f:
@@ -25,6 +27,8 @@ def main():
         if str.isalpha() == True:
             print(str,":", " ", n, sep="")
     print("============= END ===============")
+
+    print(sys.argv)
 
 main()
     
